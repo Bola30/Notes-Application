@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_application/views/Coustem_Appbar.dart';
-import 'package:notes_application/views/widgets/Coustem_Note_Item.dart';
+import 'package:notes_application/views/widgets/Notes_ListView.dart';
 
 class Notesbody extends StatelessWidget {
   const Notesbody({super.key});
@@ -16,10 +16,12 @@ class Notesbody extends StatelessWidget {
           ),
           CoustemAppBar(),
           SizedBox(height: 25,),
-          NoteItem(),
+          Expanded(child: NotesListView()),
         ],
       ),
     );
   }
 }
+
+
 
