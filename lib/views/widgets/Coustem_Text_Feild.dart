@@ -13,7 +13,7 @@ class CoustemTextFeild extends StatelessWidget {
       maxLines: maxlines,
       decoration: InputDecoration(
         hintText: hint,
-        hintStyle: TextStyle(color: Colors.teal),
+        hintStyle: const TextStyle(color: Colors.teal),
         border: buildBorder(),
         enabledBorder:buildBorder(),     
         focusedBorder: buildBorder(Colors.teal)
