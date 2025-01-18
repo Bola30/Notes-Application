@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:notes_application/views/widgets/Serche_Icon.dart';
 
 class CoustemAppBar extends StatelessWidget {
-  const CoustemAppBar({super.key});
+  const CoustemAppBar({super.key, required this.titel, required this.icon});
+
+ final String titel;
+  final IconData icon;
+
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return  Row(
       children: [
         Text(
-          "Notes",
+          titel,
           style: TextStyle(fontSize: 28),
         ),
         Spacer(),
-        CoustemSercheIcon(),
+        Icon(icon),
       ],
     );
   }
