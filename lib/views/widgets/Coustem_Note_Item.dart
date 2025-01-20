@@ -23,12 +23,12 @@ class NoteItem extends StatelessWidget {
             children: [
               ListTile(
                 title: const Text(
-                  "Flutter Tips",
+                  "Flutter",
                   style: TextStyle(color: Colors.black, fontSize: 26),
                 ),
                 subtitle:  Padding(
                   padding: const EdgeInsets.only(top: 16 , bottom: 16) ,
-                  child: Text("Build Your Career With Bola Nady",
+                  child: Text("It is an example of explaining the title. ",
                       style: TextStyle(color: Colors.black.withOpacity(0.5), fontSize: 18)),
                 ),
                 trailing: IconButton(

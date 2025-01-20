@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_application/views/widgets/Coustem_Icon.dart';
 
 class CoustemAppBar extends StatelessWidget {
   const CoustemAppBar({super.key, required this.titel, required this.icon});
@@ -13,10 +14,10 @@ class CoustemAppBar extends StatelessWidget {
       children: [
         Text(
           titel,
-          style: TextStyle(fontSize: 28),
+          style: const TextStyle(fontSize: 28),
         ),
-        Spacer(),
-        Icon(icon),
+        const Spacer(),
+        CustomIcon(icon: icon),
       ],
     );
   }
