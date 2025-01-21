@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:notes_application/views/Coustem_Appbar.dart';
+import 'package:notes_application/views/widgets/Coustem_Text_Feild.dart';
 
 class EditNoteView extends StatelessWidget {
   const EditNoteView({super.key});
@@ -17,6 +18,14 @@ class EditNoteView extends StatelessWidget {
               titel: 'Edit Note',
               icon: Icons.check,
             ),
+      SizedBox(
+              height: 50,
+            ),
+            CoustemTextFeild(hint: "Titel",),
+              SizedBox(
+              height: 16,
+            ),
+            CoustemTextFeild(hint: "Content", maxlines: 5,)
           ],),
       ),
     );
