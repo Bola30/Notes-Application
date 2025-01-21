@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:notes_application/views/widgets/Coustem_Icon.dart';
+import 'package:notes_app/views/widgets/Coustem_Icon.dart';
 
 class CoustemAppBar extends StatelessWidget {
   const CoustemAppBar({super.key, required this.titel, required this.icon});
