@@ -1,9 +1,18 @@
-class NoteModel {
-  final String titel;
-  final String subtitel;
-  final String date;
-  final int color;
+import 'package:hive/hive.dart';
+part 'note_model.g.dart';
 
+@HiveType(typeId: 0)
+class NoteModel extends HiveObject {
+
+  @HiveField(0)
+  final String titel;
+  @HiveField(1)
+  final String subtitel;
+  @HiveField(2)
+  final String date;
+  @HiveField(3)
+  final int color;
+ 
   NoteModel(
       {required this.titel,
       required this.subtitel,
