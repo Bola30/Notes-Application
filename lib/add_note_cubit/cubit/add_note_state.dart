@@ -8,7 +8,6 @@ sealed class AddNoteState extends Equatable {
 }
 
 final class AddNoteInitial extends AddNoteState {}
-<<<<<<< HEAD
 final class AddNoteLoading extends AddNoteState {}
 final class AddNoteSuccess extends AddNoteState {}
 final class AddNoteFailure extends AddNoteState {
@@ -20,6 +19,3 @@ final class AddNoteFailure extends AddNoteState {
 
 
 
-
-=======
->>>>>>> f6d4d198a22bf56de2f01bb32a947486bbf1a6af
